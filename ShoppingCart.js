@@ -14,7 +14,6 @@ export default class ShoppingCart{
      }
 
     removeItem(barcode){
-        const item = ITEMS.find(item => item.barcode === barcode);
         const existed = this.cart.get(barcode);
         existed.count = existed.count - 1;  
        
@@ -22,12 +21,18 @@ export default class ShoppingCart{
     }
 
     generateBill(){
+        let billText = '';
         this.cart.forEach(function(value, key) {
-            console.log(value.count + " X " + value.itemName + " @ "+value.price + " = " + value.count*value.price );
+            billText = billText + `${value.count} X ${value.itemName} @${value.price} = ${value.count*value.price} \n`
           })
+
           const totalItems = Array.from(this.cart.values());
-          this.total = totalItems.reduce((prev, current) => {
+          const total = totalItems.reduce((prev, current) => {
             return prev + current.price * current.count;
         },0);
+
+        billText = billText + `Total = ${total}`;
+
+        return billText;
     }
 }
