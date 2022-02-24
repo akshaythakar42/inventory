@@ -24,7 +24,7 @@ It can also calculate the bill of items in cart.
 Setup this project with npm
 
 ```bash
-  https://github.com/akshaythakar42/inventory.git
+  git clone https://github.com/akshaythakar42/inventory.git
   cd inventory
   npm install
 ```
