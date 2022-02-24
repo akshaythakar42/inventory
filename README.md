@@ -1,15 +1,15 @@
 
 # Shopping Cart
 
-This project will provide you the functions to add and delete the item in cart by using barcode.
-and it can calculate bill of items in cart.
+This project will provide you the functions to add and delete the item in cart by using barcode. 
+It can also calculate the bill of items in cart.
 
 
 
 
 ## Authors
 
-- @akshaythakar42
+- https://www.linkedin.com/in/akshay-thakar-345269a1/
 
 
 ## Features
@@ -24,6 +24,7 @@ and it can calculate bill of items in cart.
 Setup this project with npm
 
 ```bash
+  https://github.com/akshaythakar42/inventory.git
   cd inventory
   npm install
 ```
